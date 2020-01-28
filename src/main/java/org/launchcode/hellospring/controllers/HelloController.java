@@ -42,7 +42,7 @@ public class HelloController {
     }
 
     @GetMapping("hello-names")
-    public String hellonames(Model model) {
+    public String helloNames(Model model) {
         List<String> names = new ArrayList<>();
         names.add("LaunchCode");
         names.add("Java");
@@ -51,24 +51,7 @@ public class HelloController {
         return "hello-list";
     }
 
-//    @GetMapping("langForm")
-//        public static String createMessage() {
-//            return "<html>" +
-//                    "<body>" +
-//                    "<form action='english' method='post'>" +
-//                    "<input type='text' name='name'>" +
-//                    "<select name='language' id='language select'>" +
-//                    "<option value='english'> English</option>" +
-//                    "<option value='german'> German</option>" +
-//                    "<option value='spanish'> Spanish</option>" +
-//                    "<option value='italian'> Italian</option>" +
-//                    "<option value='french'> French</option>" +
-//                    "<input type='submit' value='Greet me!'>" +
-//                    "</select>" +
-//                    "</form>" +
-//                    "</body>" +
-//                    "</html>";
-//    }
+
 
 
 }
